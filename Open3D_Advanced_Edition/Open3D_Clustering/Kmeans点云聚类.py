@@ -11,7 +11,7 @@ from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 
 # ----------------------------加载点云数据---------------------------------
-pcd = o3d.io.read_point_cloud("data/two_tree.pcd")
+pcd = o3d.io.read_point_cloud("./data/two_tree.pcd")
 X = np.asarray(pcd.points)
 # ----------------------------进行数据训练---------------------------------
 # 第一种方式

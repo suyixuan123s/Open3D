@@ -13,7 +13,7 @@ import numpy as np
 from sklearn.cluster import DBSCAN
 
 # ----------------------------加载点云数据---------------------------------
-pcd = o3d.io.read_point_cloud("data/two_tree.pcd")
+pcd = o3d.io.read_point_cloud("../data/two_tree.pcd")
 X = np.asarray(pcd.points)
 
 X = StandardScaler().fit_transform(X)

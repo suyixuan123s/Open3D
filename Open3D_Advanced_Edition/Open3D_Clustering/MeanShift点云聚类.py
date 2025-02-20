@@ -10,7 +10,7 @@ import numpy as np
 from sklearn.cluster import MeanShift, estimate_bandwidth
 
 # ----------------------------加载点云数据---------------------------------
-pcd = o3d.io.read_point_cloud("../../../data/two_tree.pcd")
+pcd = o3d.io.read_point_cloud("./data/two_tree.pcd")
 X = np.asarray(pcd.points)
 # -----------------------使用MeanShift算法进行聚类-------------------------
 # estimate_bandwidth函数可以自动获取 一个bandwidth估算值，也可自行设置bandwidth
